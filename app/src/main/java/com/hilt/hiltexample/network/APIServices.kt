@@ -10,6 +10,6 @@ interface APIServices {
     //https://datanapps.com/DNARestAPIs/getUserLists
 
     @GET("getUserLists")
-    fun getUser() : Call<BaseUser>
+   suspend fun getUser() : BaseUser
 
 }

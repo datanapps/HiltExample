@@ -1,7 +1,8 @@
-package com.hilt.hiltexample
+package com.hilt.hiltexample.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hilt.hiltexample.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

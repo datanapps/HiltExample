@@ -11,7 +11,6 @@ import com.hilt.hiltexample.viewmodels.MainViewModels
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 
-
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -25,10 +24,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("asd", "----------- :: "+it.userlist!!.get(0).firstName)
             setAdapterInRecycleView(it.userlist!!)
         })
-
     }
-
-
 
     fun setAdapterInRecycleView(userList: List<User>){
         rv_user_list.adapter = UserAdapter(userList, this)

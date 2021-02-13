@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.hilt.hiltexample.R
+import com.hilt.hiltexample.models.User
 import com.hilt.hiltexample.viewmodels.MainViewModels
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,12 +21,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mainViewModel.userResponse.observe(this, Observer {
-
-
             Log.d("asd", "----------- :: "+it.userlist!!.get(0))
-
-
         })
+
+    }
+
+
+
+    fun setAdapterInRecycleView(userList: List<User>){
 
     }
 }

@@ -10,13 +10,15 @@ import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
 class UserRepositoryImpl
-
 @Inject constructor(private var apiServicesImpl: APIServicesImpl){
 
-    fun getUserList(): Flow<BaseUser>  = flow{
 
+
+    fun getUserList(): Flow<BaseUser>  = flow{
         var response = apiServicesImpl.getUserList()
         emit(response)
     }.flowOn(Dispatchers.IO)
+
+
 
 }

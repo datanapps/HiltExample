@@ -13,12 +13,12 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class MainViewModels @Inject constructor(val userRepositoryImpl: UserRepositoryImpl):ViewModel(){
+class MainViewModels
 
+@Inject constructor(userRepositoryImpl: UserRepositoryImpl):ViewModel(){
 
     var userResponse : LiveData<BaseUser> = userRepositoryImpl.getUserList()
-        .catch { exception-> Log.d("asd", "Exception ") }
-
+        .catch { exception-> Log.d("asd", "Exception ${exception.message}") }
         .asLiveData()
 
 

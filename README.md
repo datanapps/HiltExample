@@ -16,6 +16,10 @@
 ### RecycleView
 
 
+### Reference : 
+
+1. https://developer.android.com/training/dependency-injection/hilt-android
+2. https://developer.android.com/codelabs/android-hilt#4
 
  
  <img src="https://datanapps.com/public/dnarestapi/naughty_smile.jpg" height="200" width="300">

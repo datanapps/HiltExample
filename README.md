@@ -2,7 +2,7 @@
 
 <img src="https://github.com/datanapps/HiltExample/blob/main/screens/device-2021-02-13-192208.png" height="500" width="250">
 
-## This library contain Kotlin + Dagger (Hilt) + Recycleview 
+## This Example app will contain Kotlin + Dagger (Hilt) + Recycleview 
 
 
 ### Testing API : https://datanapps.com/DNARestAPIs/getUserLists to display user data

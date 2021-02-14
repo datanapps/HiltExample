@@ -21,9 +21,5 @@ class MainViewModels
         .catch { exception-> Log.d("asd", "Exception ${exception.message}") }
         .asLiveData()
 
-
-
-
-
 }
 
